@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="event.preventDefault(); dataCar(this)">
+        <h1>Car</h1>
+        <div>
+            <input name="merk" placeholder="Merk">
+        </div>
+        <div>
+            <input name="tipe" placeholder="Tipe">
+        </div>
+        <div>
+            <input name="colour" placeholder="Colour">
+        </div>
+        <div>
+            <input name="kapasitasSilinder" placeholder="Kapasitas Silinder">
+        </div>
+        <button>Simpan</button>
+    </form>
+    <div>
+        <h1 id="konten"></h1>
+    </div>
+    <div id="konten1"></div>
+    <div id="konten2"></div>
+    <div id="konten3"></div>
+    <div id="konten4"></div>
+
+    <script type="text/javascript">
+        function dataCar(element) {
+            const merk = element.merk.value;
+            const tipe = element.tipe.value;
+            const colour = element.colour.value;
+            const kapasitasSilinder = element.kapasitasSilinder.value;
+
+            document.getElementById('konten').innerHTML = 'Car';
+            document.getElementById('konten1').innerHTML = `Merk: ${merk}`;
+            document.getElementById('konten2').innerHTML = `Tipe: ${tipe}`;
+            document.getElementById('konten3').innerHTML = `Colour: ${colour}`;
+            document.getElementById('konten4').innerHTML = `kapasitasSilinder: ${kapasitasSilinder}`;
+
+            return false;
+        }
+    </script>
+</body>
+</html>
+
