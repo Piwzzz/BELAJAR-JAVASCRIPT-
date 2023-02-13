@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Kategori</title>
+</head>
+<body>
+    <h1>Daftar Kategori</h1>
+    <form id="form-kategori" action="" onsubmit="event.preventDefault; tambahKategori(this)" >
+        <div>
+            <label for="namaKategori">Nama Kategori</label>
+        </div>
+        <div>
+            <input type="text" id="namaKategori" name="namaKategori">
+        </div>
+        <div style="padding-top: 10px;">
+            <button id="btn-save-kategori">Simpan</button>
+        </div>
+    </form>
+
+    <div id="daftar-kategori"></div>
+
+    <script src="daftar-kategori-revisi.js"></script>
+    
+    
+</body>
+</html>

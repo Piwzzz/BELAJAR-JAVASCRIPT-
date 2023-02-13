@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi Penjualan</title>
+</head>
+<body>
+    <h1>Transaksi Penjualan</h1>
+    <form id="form-transaksi" action="" onsubmit="event.preventDefault(); tambahTransaksi(this)">
+        <input name="index" type="hidden" value="-1">
+        <div>
+            <label for="namaProduk">Nama Produk</label>
+        </div>
+        <div>
+            <input type="text" id="namaProduk" name="namaProduk">
+        </div>
+        <div>
+            <label for="hargaProduk">Harga Produk</label>
+        </div>
+        <div>
+            <input type="text" id="hargaProduk" name="hargaProduk">
+        </div>
+        <div>
+            <label for="stokProduk">Stok Produk</label>
+        </div>
+        <div>
+            <input type="text" id="stokProduk" name="stokProduk">
+        </div>
+        <div>
+            <label for="linkGambarProduk">Link Gambar Produk</label>
+        </div>
+        <div>
+            <input type="text" id="linkGambarProduk" name="linkGambarProduk">
+        </div>
+        <div>
+            <label for="jumlah">Jumlah</label>
+        </div>
+        <div>
+            <input type="text" id="jumlah" name="jumlah">
+        </div>
+        <div>
+            <label for="totalHarga">Total Harga</label>
+        </div>
+        <div>
+            <input type="text" id="totalHarga" name="totalHarga">
+        </div>
+        <div>
+            <label for="tunai">Tunai</label>
+        </div>
+        <div>
+            <input type="text" id="tunai" name="tunai">
+        </div>
+        <div>
+            <label for="kembalian">Kembalian</label>
+        </div>
+        <div>
+            <input type="text" id="kembalian" name="kembalian">
+        </div>
+
+        <button id ="btn-save-transaksi">Simpan</button>
+    
+    </form>
+    <div id="daftar-transaksi"></div>
+    <script src="transaksi.js"></script>
+</body>
+</html>
