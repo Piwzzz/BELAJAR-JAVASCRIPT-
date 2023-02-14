@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <title>Aplikasi Daftar Produk</title>
 </head>
 <body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Daftar Produk</a></li>
+            <li><a href="daftar-kategori.html">Kategori Produk</a></li>
+            <li><a href="transaksi.html">Transaksi Penjualan</a></li>
+            <li><a href="konsumen.html">Konsumen</a></li>
+          </ul>
+        </div>
+      </nav>
     <h1>Daftar Produk</h1>
     <form id="form-produk" action="" onsubmit="event.preventDefault(); tambahProduk(this)">
         <input name="index" type="hidden" value="-1">

@@ -41,26 +41,32 @@ const aplikasiDaftarTransaksi = {
             alert('Stok produk tidak boleh kosong!');
             return false;
         } 
+
         if(!this.transaksi.linkGambarProduk) {
             alert('Link gambar produk tidak boleh kosong!');
             return false;
         }
+
         if(!this.transaksi.jumlah) {
             alert('Jumlah tidak boleh kosong!');
             return false;
         }
+
         if(!this.transaksi.totalHarga) {
             alert('Total harga tidak boleh kosong!');
             return false;
         }
+
         if(!this.transaksi.tunai) {
             alert('Tunai tidak boleh kosong!');
             return false;
         }
+
         if(!this.transaksi.kembalian) {
             alert('Kembalian tidak boleh kosong!');
             return false;
         }
+
         if(this.transaksi.index == -1) {
             this.daftarTransaksi.push(copy(this.transaksi));
         } else {
@@ -94,9 +100,9 @@ const aplikasiDaftarTransaksi = {
         const componentDaftarTransaksi = document.getElementById('daftar-transaksi');
         componentDaftarTransaksi.innerHTML = '';
         this.daftarTransaksi.forEach((transaksi, index) => {
-            componentDaftarTransaksi.innerHTML += `<li>${transaksi.namaProduk}</li> <br> <li>${transaksi.hargaProduk}</li> <br> <li>${transaksi.stokProduk}</li> <br> ${transaksi.jumlah} <br> ${transaksi.totalHarga} <br> ${transaksi.tunai} <br> ${transaksi.kembalian} <br> <img src="${transaksi.linkGambarProduk}" width="105" height="110">`
+            componentDaftarTransaksi.innerHTML += `<li>${transaksi.namaProduk}</li> <br> <li>${transaksi.hargaProduk}</li> <br> <li>${transaksi.stokProduk}</li> <br> ${transaksi.jumlah} <br> ${transaksi.totalHarga} <br> ${transaksi.tunai} <br> ${transaksi.kembalian} <br> <img src="${produk.linkGambarProduk}" width="105" height="110">`;
         });
-    }
+    },
 }
 
 function copy(obj) {
